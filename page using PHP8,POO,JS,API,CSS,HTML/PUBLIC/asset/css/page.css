@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Fredoka+One&family=Righteous&display=swap');
+
+:root{
+
+/**     COLOUR VARIABLES    */
+
+    --yellow:rgb(221, 165, 9);
+    --green:rgb(72, 129, 11);
+    --blue:rgb(19, 134, 201);
+    --purple:rgb(76, 6, 185);
+    --pink: rgb(196, 14, 81);
+    --black:rgb(0, 0, 0);
+
+/**     FONT VARIABLES        */
+
+    --heading2:'Audiowide', cursive;
+    --heading1:'Fredoka One', cursive;
+    --text1:'Righteous', cursive;
+
+
+/**   POSITION VARIABLES      */
+    --f:flex;
+    --g:grid;
+    --col:column;
+    --cen:center;
+
+}
+/**------------------------------------------------*/
+/**               MOBILE SIZE
+/**------------------------------------------------*/
+/**   DIV WITH TEXT AT TOP OF PAGE  */
+div{
+    margin-top: 8vh;
+}
+/**   P WITH TEXT TOP OF PAGE  */
+div>p{
+   color: var(--green);
+   font: 150% var(--right);
+   text-align: var(--cen);
+}
+
+section{
+    display:var(--f);
+    flex-direction: var(--col);
+    align-items: var(--cen);
+}
+
+article{
+    display: var(--f);
+    flex-direction: var(--col);
+    align-items: var(--cen);
+    margin-top: 10vh;
+    grid-column: auto;
+    grid-row: auto;
+}
+figure{
+    height: 20vh;
+}
+
+img{
+    height: 100%;
+    width: 100%; 
+}
+
+form{
+    display: var(--f);
+    flex-direction: var(--col);
+    align-items: var(--cen);
+    
+}
+
+/**      NAME        */
+article>p:nth-of-type(1){
+    color: var(--purple);
+    font: 150% var(--heading2);
+    height:8%;
+    margin: 0;
+}
+
+/**   DESCRIPTION   */
+article>p:nth-of-type(2){
+    color: var(--pink);
+    font: 112% var(--right);
+    height: 23%;
+    width: 55%;
+    text-align: var(--cen);
+    }
+
+/**       NEED       */
+article>p:nth-of-type(3){
+    color: var(--blue);
+    font:  92.5% var(--heading1);
+    margin-top: 8%;
+    }
+/**     NEED ONE    */
+article>p:nth-of-type(4){
+    color: var(--green);
+    font: 100% var(--text1);
+    } 
+
+/**     NEED TWO    */
+article>p:nth-of-type(5){
+    color: var(--yellow);
+    font: 100% var(--text1);
+    } 
+
+/**    NEED THREE   */
+article>p:nth-of-type(6){
+    color: var(--pink);
+    font: 100% var(--text1);
+    }
+
+/**   ADD TOPANIER  */
+form>input{
+    font-family: var(--heading1);
+    font-size: 90%;
+    width: 100%;
+    color: var(--black);
+    background-color: var(--green);
+    border-top-right-radius:20px;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+}
+
+/**------------------------------------------------*/
+/**              TABLET SIZE
+/**------------------------------------------------*/
+@media only screen and (min-width:600px){
+    section{
+        display: var(--g);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        padding: 2vh;
+        gap:0;
+    }
+}
+/**------------------------------------------------*/
+/**                DESKTOP SIZE
+/**------------------------------------------------*/
+ 
+@media only screen and (min-width:900px){
+    section{
+        display: var(--g);
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows:auto;
+        padding: 4vh;
+        gap: 1vw 2vh; 
+        width: 100%;
+    }
+}
+
+
+ 
+
+
+
+
+
+
+
+
